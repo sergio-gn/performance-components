@@ -1,0 +1,18 @@
+<!---  WebM is 90% lighter than gif AND with using lazyload while off the main LCP, the results are unbelievable -->
+
+<video id="lazy-video" data-src="example.com/video.webm" style="pointer-events: none;" loop muted controls="controls" autoplay></video>
+
+<script>
+    function lazyLoadVideo(entries, observer) {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+        const video = entry.target;
+        video.src = video.getAttribute('data-src');
+        observer.unobserve(video);
+        }
+    });
+}
+const video = document.getElementById('lazy-video');
+const observer = new IntersectionObserver(lazyLoadVideo, { threshold: 0.1 });
+observer.observe(video);
+</script>
