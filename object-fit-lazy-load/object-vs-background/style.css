@@ -1,0 +1,36 @@
+.img-wrapper {
+  position: relative;
+}
+.img-wrapper.absolute-full {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+}
+.img-wrapper.absolute-full img {
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  right: -100%;
+  bottom: -100%;
+  margin: auto;
+}
+.img-wrapper.object img {
+  width: 100px;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.img-wrapper.absolute {
+  width: 100px;
+  height: 100px;
+}
+.img-wrapper.absolute .img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
