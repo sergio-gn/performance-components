@@ -4,11 +4,12 @@
 This repository contains a collection of performance-optimized components that I have developed for creating websites faster and with better results. Through my experience, I have discovered that by using these components, I can achieve optimal performance by eliminating unnecessary sources in the code and ensuring that all the code on the website is being utilized to its full extent.
 
 ## Components
-[Lazy BG](https://sergio-gn.github.io/performance-components/lazy-bg)
-[Object Fit Lazy Load](https://sergio-gn.github.io/performance-components/object-fit/object-fit-lazy-load)
-[Object Fit vs Background](https://sergio-gn.github.io/performance-components/object-fit/object-vs-background)
-[Video WebM](https://sergio-gn.github.io/performance-components/video-webm/video-webm)
-[Video WebM Lazy](https://sergio-gn.github.io/performance-components/video-webm/video-webm-lazy)
++ [Lazy BG - Different image for mobile and desktop](https://sergio-gn.github.io/performance-components/lazy-bg)
+    <video style="width:100%" controls><source src="./lazy-bg/lazyload-bg.webm" type="video/mp4"></video>
++ [Object Fit Lazy Load](https://sergio-gn.github.io/performance-components/object-fit/object-fit-lazy-load)
++ [Object Fit vs Background](https://sergio-gn.github.io/performance-components/object-fit/object-vs-background)
++ [Video WebM](https://sergio-gn.github.io/performance-components/video-webm/video-webm-normal)
++ [Video WebM Lazy](https://sergio-gn.github.io/performance-components/video-webm/video-webm-lazy)
 
 ## Benefits of Using Performance Components
 

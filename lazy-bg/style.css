@@ -1,9 +1,10 @@
 .space{
-    height: 100vh;
+    padding-top: 10rem;
+    height: 200vh;
     justify-content: center;
-    align-items: center;
     display: flex;
-    font-size: 2rem;
+    font-size: 1rem;
+    flex-direction: column;
 }
 .cat{
     width:100vw;
