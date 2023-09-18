@@ -10,6 +10,7 @@ This repository contains a collection of performance-optimized components that I
 + [Object Fit vs Background](https://sergio-gn.github.io/performance-components/object-fit/object-vs-background)
 + [Video WebM](https://sergio-gn.github.io/performance-components/video-webm/video-webm-normal)
 + [Video WebM Lazy](https://sergio-gn.github.io/performance-components/video-webm/video-webm-lazy)
++ [Accordion Vanilla JS](https://sergio-gn.github.io/performance-components/accordion-vanilla-js)
 
 ## Benefits of Using Performance Components
 
