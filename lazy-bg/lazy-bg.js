@@ -1,5 +1,5 @@
 function lazyLoadImages() {
-  const lazyElements = document.querySelectorAll('.bg-responsive-lazy');
+  const lazyElements = document.querySelectorAll('[data-both-bg-lazy], [data-mobile-image], [data-pc-image]');
   const isMobile = window.innerWidth < 768;
 
   if (isMobile) {
@@ -9,7 +9,18 @@ function lazyLoadImages() {
   }
 
   lazyElements.forEach((watchInActionDiv) => {
-    let imageUrl = isMobile ? watchInActionDiv.getAttribute('data-mobile-image') : watchInActionDiv.getAttribute('data-pc-image');
+    let imageUrl = null;
+
+    if (isMobile) {
+      imageUrl = watchInActionDiv.getAttribute('data-mobile-image');
+    } else {
+      const dataBothBgLazy = watchInActionDiv.getAttribute('data-both-bg-lazy');
+      if (dataBothBgLazy) {
+        imageUrl = dataBothBgLazy;
+      } else {
+        imageUrl = watchInActionDiv.getAttribute('data-pc-image');
+      }
+    }
 
     if (imageUrl) {
       const observer = new IntersectionObserver(entries => {

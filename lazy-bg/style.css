@@ -1,7 +1,6 @@
 .space{
     padding-top: 10rem;
     height: 200vh;
-    justify-content: center;
     display: flex;
     font-size: 1rem;
     flex-direction: column;
