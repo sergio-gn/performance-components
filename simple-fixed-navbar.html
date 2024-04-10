@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Fixed Navbar</title>
+    <style>
+      .navbar {
+        position: relative;
+        width: 100%;
+        background-color: #333;
+        color: #fff;
+        padding: 10px 0;
+        transition: top 0.3s;
+      }
+      .navbar.fixed {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+      }
+      .content {
+        margin-top: 0;
+      }
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        height: 2000px;
+      }
+      .container {
+        width: 80%;
+        margin: auto;
+      }
+      h1 {
+        margin-top: 0;
+      }
+      p {
+        line-height: 1.6;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar" id="navbar">
+      <div class="container">
+        Navbar Content
+      </div>
+    </div>
+    <div class="content">
+      <div class="container">
+        <h1>Main Content</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non semper risus, ac vehicula sapien. Morbi dapibus justo eget sem fringilla, a feugiat ligula dictum. Duis et volutpat magna. Mauris vestibulum ipsum ac purus varius, at ullamcorper lacus rutrum. Proin ut tempus magna, at tincidunt risus. Aliquam consectetur vehicula purus id volutpat. Sed nec congue nunc. Phasellus pharetra nibh sed arcu laoreet suscipit. Donec vestibulum, tortor vel dictum sodales, sem est rhoncus justo, at iaculis nulla ex nec odio. Suspendisse convallis leo et arcu sodales, quis lobortis mauris ullamcorper.</p>
+        <p>Nullam eu feugiat turpis. Cras non risus at tellus fermentum consequat. Mauris nec velit mauris. Vivamus vel vehicula nibh, in elementum justo. Nullam vitae nulla nec orci maximus aliquet non non nunc. Integer sit amet justo sed libero tempus suscipit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Cras eleifend id nulla sed dictum. In ultricies commodo turpis, non tincidunt risus luctus a. Aenean rhoncus odio et diam ultrices efficitur. Aenean molestie sapien et tempus sollicitudin. Curabitur et justo nisi.</p>
+      </div>
+    </div>
+    <script>
+      var navbar = document.getElementById('navbar');
+      function handleScroll() {
+        if (window.pageYOffset > navbar.offsetTop) {
+          navbar.classList.add('fixed');
+        } else {
+          navbar.classList.remove('fixed');
+        }
+      }
+      window.onscroll = handleScroll;
+    </script>
+  
+  </body>
+</html>
